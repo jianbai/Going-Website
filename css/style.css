@@ -10,9 +10,10 @@
 }
 
 body, html {
-  font: 100%/1.5 'HelveticaNeue-Thin';
+  font: 100%/1.5 'HelveticaNeue-Light';
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  color: #333333;
   background-color: #F6F6EF;
 }
 
@@ -37,31 +38,50 @@ body, html {
 /* Font size
 --------------------------------------------- */
 
+.thin-font {
+	font-family: "HelveticaNeue-Thin";
+}
+
 .regular-font {
+	font-size: 14px;
+}
+
+.medium-font {
 	font-size: 20px;
 }
 
 .large-font {
 	font-size: 50px;
+	font-family: "HelveticaNeue-Thin";
 }
 
-@media (min-width: 40rem) {
-  .regular-font {
-	font-size: 24px;
+@media (min-width: 50rem) {
+	.regular-font {
+		font-size: 14px;	
+	}
+
+  .medium-font {
+		font-size: 24px;
 	}
 
 	.large-font {
 		font-size: 60px;
+		font-family: "HelveticaNeue-Thin";
 	}	
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 70rem) {
   .regular-font {
-	font-size: 32px;
+		font-size: 16px;
+	}
+
+  .medium-font {
+		font-size: 32px;
 	}
 
 	.large-font {
 		font-size: 80px;
+		font-family: "HelveticaNeue-Thin";
 	}		
 }
 
@@ -81,12 +101,16 @@ body, html {
 	text-align: center;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 50rem) {
 	.section {
 		position: relative;
 		height: 100vh;
 		min-height: 540px;
 		text-align: center;
+	}
+
+	.section.help {
+		min-height: 680px;
 	}
 }
 
@@ -96,10 +120,11 @@ body, html {
 	
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 50rem) {
 	.column {
 		float: left;
 		height: 100vh;
+		min-height: 540px;
 	  margin: 0;
 	}
 
@@ -111,6 +136,7 @@ body, html {
 	.column.third { width: 33.3%; }
 	.column.fourth { width: 25%; }
 	.column.flow-opposite { float: right; }
+	.column.help { position: relative; min-height: 680px; }
 }
 
 /* Title text
@@ -119,7 +145,7 @@ body, html {
 .title {
 	display: inline-block;
 	height: 60px;
-	margin-top: 20px;
+	margin-top: 40px;
 }
 
 .title-logo {
@@ -131,11 +157,9 @@ body, html {
 	float: left;
 	margin-left: 10px;
 	line-height: 60px;
-	color: #333333;
 }
 
 .tag {
-	font-family: "HelveticaNeue-Light";
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -146,14 +170,14 @@ body, html {
 
 .badge-mobile {
 	display: block;
-	margin: 20px 0px;
+	margin: 40px 0px;
 }
 
-.icon-web {
+.next {
 	display: none;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 50rem) {
 
 	.container-title-text {
 		text-align: center;
@@ -163,7 +187,7 @@ body, html {
 	.wrapper {
 		position: absolute;
 		max-width: 560px;
-		max-height: 560px;
+		max-height: 580px;
 		top: 0;
 		right: 0;
 		left: 0;
@@ -186,11 +210,9 @@ body, html {
 		float: left;
 		margin-left: 10px;
 		line-height: 60px;
-		color: #333333;
 	}
 
 	.tag {
-		font-family: "HelveticaNeue-Light";
 		margin-top: 20px;
 	}
 
@@ -203,8 +225,18 @@ body, html {
 		display: none;
 	}
 
+	.next {
+		position: relative;
+		display: block;
+		margin-top: 20px;
+	}
+
+	.help-tag {
+		position: absolute;
+		top: 10px; left: 0; bottom: 0; right: 0;
+	}
+
 	.icon-web {
-		display: inline-block;
 		fill: #333333;
 	}
 }
@@ -215,23 +247,103 @@ body, html {
 .container-title-mockup {
 }
 
-.mockup {
+.title-mockup {
 	height: 80vh;
-	min-height: 200px;
+	min-height: 500px;
 	margin: 10px 0;
 	vertical-align: middle;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 50rem) {
 	.container-title-mockup {
 		line-height: 100vh;
 		text-align: left;
 	}
 
-	.mockup {
+	.title-mockup {
 	height: 80vh;
 	min-height: 500px;
 	margin: 20px 0;
 	vertical-align: middle;
+	}
+}
+
+/* How Going works
+--------------------------------------------- */
+
+.container-help {
+
+}
+
+.icon-mobile {
+	display: inline-block;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	fill: #F6F6EF;
+}
+
+.help-title {
+	font-size: 45px;
+}
+
+.help-text {
+	display: block;
+	margin: 0 60px;
+	font-size: 20px;
+}
+
+.help-mockup {
+	display: none;
+}
+
+
+
+@media (min-width: 50rem) {
+	.container-help {
+		position: relative;
+		min-height: 680px;
+	}
+
+	.icon-mobile {
+		display: none;
+	}
+
+	.help-title {
+		display: block;
+		margin-top: 20px;
+	}
+
+	.help-text {
+		display: block;
+		margin: 10px 40px;
+		font-size: 14px;
+	}
+
+	.help-mockup {
+		position: absolute;
+		display: block;
+		height: 460px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+}
+
+@media (min-width: 70rem) {
+	.help-mockup {
+		position: absolute;
+		display: block;
+		height: 480px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	.help-text {
+		display: block;
+		margin: 10px 40px;
+		font-size: 16px;
 	}
 }
