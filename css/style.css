@@ -1,6 +1,8 @@
 /* Fonts
 --------------------------------------------- */
 
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,300italic);
+
 /* Main styles
 --------------------------------------------- */
 
@@ -10,7 +12,8 @@
 }
 
 body, html {
-  font: 100%/1.5 'HelveticaNeue-Light';
+  font: 100%/1.5 'Roboto';
+  font-weight: 300;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   color: #333333;
@@ -42,12 +45,8 @@ a {
 /* Font size
 --------------------------------------------- */
 
-.thin-font {
-	font-family: "HelveticaNeue-Thin";
-}
-
 .regular-font {
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .medium-font {
@@ -56,12 +55,12 @@ a {
 
 .large-font {
 	font-size: 50px;
-	font-family: "HelveticaNeue-Thin";
+	font-weight: 100;
 }
 
 @media (min-width: 50rem) {
 	.regular-font {
-		font-size: 14px;	
+		font-size: 16px;	
 	}
 
   .medium-font {
@@ -70,13 +69,13 @@ a {
 
 	.large-font {
 		font-size: 60px;
-		font-family: "HelveticaNeue-Thin";
+		font-weight: 100;
 	}	
 }
 
 @media (min-width: 70rem) {
   .regular-font {
-		font-size: 16px;
+		font-size: 18px;
 	}
 
   .medium-font {
@@ -85,7 +84,7 @@ a {
 
 	.large-font {
 		font-size: 80px;
-		font-family: "HelveticaNeue-Thin";
+		font-weight: 100;
 	}		
 }
 
@@ -180,7 +179,6 @@ a {
 
 .tag {
 	margin-top: 10px;
-	margin-bottom: 10px;
 }
 
 .badge-web {
@@ -192,8 +190,12 @@ a {
 	margin: 40px 0px;
 }
 
-.next {
+#scroller {
 	display: none;
+}
+
+.next {
+	margin: 10px 0;
 }
 
 @media (min-width: 50rem) {
@@ -245,8 +247,11 @@ a {
 
 	.next {
 		position: relative;
-		display: block;
 		margin-top: 20px;
+	}
+
+	#scroller {
+		display: block;
 	}
 
 	.walkthrough-tag {
@@ -256,6 +261,14 @@ a {
 
 	.icon-web {
 		fill: #333333;
+
+		-webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+	}
+
+	.icon-web:hover {
+		fill: #FDA942;
 	}
 }
 
@@ -296,6 +309,7 @@ a {
 .walkthrough-title {
 	display: block;
 	font-size: 45px;
+	font-weight: 100;
 }
 
 .walkthrough-text {
@@ -330,12 +344,13 @@ a {
 	.walkthrough-title {
 		display: block;
 		font-size: 45px;
+		font-weight: 100;
 	}
 
 	.walkthrough-text {
 		display: block;
-		margin: 0 60px;
-		font-size: 20px;
+		margin: 0px 60px;
+		font-size: 22px;
 	}
 
 	.walkthrough-mockup {
@@ -371,7 +386,7 @@ a {
 
 	.walkthrough-text {
 		display: block;
-		margin: 10px 40px;
+		margin: 0px 40px;
 		font-size: 14px;
 	}
 
@@ -415,7 +430,7 @@ a {
 
 	.walkthrough-text {
 		display: block;
-		margin: 10px 40px;
+		margin: 0px 40px;
 		font-size: 16px;
 	}
 }
@@ -441,7 +456,8 @@ a {
 }
 
 .question {
-	
+	font-style: italic;
+	font-size: 18px;
 }
 
 .answer {
@@ -467,11 +483,19 @@ a {
 	}
 
 	.question {
-		
+		font-style: italic;
+		font-size: 20px;
 	}
 
 	.answer {
 		
+	}
+}
+
+@media (min-width: 70rem) {
+	.question {
+		font-style: italic;
+		font-size: 22px;
 	}
 }
 
@@ -484,7 +508,7 @@ a {
 
 .getgoing {
 	font-size: 45px;
-	font-family: "HelveticaNeue-Thin"
+	font-weight: 100;
 }
 
 .badge {
