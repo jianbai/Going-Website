@@ -30,10 +30,6 @@
 		<script src="https://cdn.jsdelivr.net/evil-icons/1.5.0/evil-icons.min.js"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/evil-icons/1.5.0/evil-icons.min.css">
 
-		<!-- CSS Files 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-		-->
-
 		<!-- Page Styles -->
 		<link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -47,7 +43,7 @@
 
 	<body>
 
-		<div class="section">
+		<div class="section header">
 			<div class="container-title-text column three-fifths">
 				<div class="wrapper">
 					<div class="title">
@@ -70,7 +66,7 @@
 						</div>
 					</div>
 					<div class="next">
-						<p class="help-tag regular-font">How Going works</p>
+						<p class="walkthrough-tag regular-font">Made with <3 for Vancouver</p>
 						<div data-icon="ei-chevron-down" data-size="l" class="icon-web"></div>
 					</div>
 				</div>
@@ -93,27 +89,84 @@
 			</div>
 		</div>
 
-		<div class="section orange-background help">
-			<div class="container-help">
-				<div class="column third help">
-					<div data-icon="ei-play" data-size="xl" class="icon-mobile"></div>
-					<p class="help-title medium-font thin-font">Go</p>
-					<span class="help-text">Press "Go" and Going will match you with 3 people around you based on your age and gender preferences</span>
-					<img class="help-mockup" src="images/home-mockup.png">
+		<div class="section orange-background walkthrough">
+			<div class="container-walkthrough">
+				<div class="column third walkthrough">
+					<p class="walkthrough-title medium-font thin-font">Go</p>
+					<span class="walkthrough-text">Press "Go" and Going will match you with 3 people around you based on your age and gender preferences</span>
+					<img class="walkthrough-mockup" src="images/home-mockup.png">
 				</div>
-				<div class="column third help">
-					<div data-icon="ei-comment" data-size="xl" class="icon-mobile"></div>
-					<p class="help-title medium-font thin-font">Go out</p>
-					<span class="help-text">Matches disappear when the weekend ends. Chat with your matches in the app and make plans to go somewhere cool!</span>
-					<img class="help-mockup" src="images/match-made-mockup.png">
+				<div class="column third walkthrough matchmade">
+					<p class="walkthrough-title medium-font thin-font">Go out</p>
+					<span class="walkthrough-text">Chat with your matches in the app and make plans to go somewhere cool! Matches disappear when the weekend ends.</span>
+					<img class="walkthrough-mockup web" src="images/match-made-mockup-white.png">
+					<img class="walkthrough-mockup mobile" src="images/match-made-mockup-black.png">
 				</div>
-				<div class="column third help">
-					<div data-icon="ei-heart" data-size="xl" class="icon-mobile"></div>
-					<p class="help-title medium-font thin-font">Go again</p>
-					<span class="help-text">Choose who you want to keep in touch with by adding them to your friends list. Go again next weekend to make new matches and grow your friends list!</span>
-					<img class="help-mockup" src="images/match-expired-mockup.png">
-					<div data-icon="ei-refresh" data-size="xl" class="icon-mobile"></div>
+				<div class="column third walkthrough">
+					<p class="walkthrough-title medium-font thin-font">Go again</p>
+					<span class="walkthrough-text">Choose who you want to keep in touch with by adding them to your friends list. Go again next weekend to make new matches and grow your friends list!</span>
+					<img class="walkthrough-mockup" src="images/match-expired-mockup.png">
 				</div>
+			</div>
+		</div>
+
+		<div class="section faq">
+			<div class="container-faq">
+				<p class="faq-title large-font"> Frequently or rarely asked questions</p>
+				<div class="qa">
+					<p class="question medium-font">Is this a dating app?</p>
+					<span class="answer">No! Going is for meeting people - not hookups, flings, trysts, affairs, dates, and/or dalliances</span>
+				</div>
+				<div class="qa">
+					<p class="question medium-font">So then who is this app for?</p>
+					<span class="answer">Going is for people who want to meet people. If (a) you like meeting new people and (b) you're free this weekend, then Going is for you!</span>
+				</div>
+				<div class="qa">
+					<p class="question medium-font">How do matches work?</p>
+					<span class="answer">Matches are groups of 4 people that are free to hang out this weekend. Matches are made based on age and gender preferences.</span>
+				</div>
+				<div class="qa">
+					<p class="question medium-font">Why do matches only last for the weekend?</p>
+					<span class="answer">Matches disappear every week so you can make new matches and meet more awesome people.</span>
+				</div>
+				<div class="qa">
+					<p class="question medium-font">How do I add friends?</p>
+					<span class="answer">When your matches disappear, you'll be prompted to choose who you want to keep as friends.</span>
+				</div>
+				<div class="qa">
+					<p class="question medium-font">Why groups of 4?</p>
+					<span class="answer">Because 4 is a magical number. 4 is small enough that you can get to know each other, but big enough that there's gotta be something there for everyone.</span>
+				</div>
+				<div class="qa">
+					<p class="question medium-font">Why can't I choose my matches?</p>
+					<span class="answer">Going is a place where unlikely friendships are made. You set your preferences based on age and gender, and chance takes care of the rest!</span>
+				</div>
+				<div class="qa">
+					<p class="question medium-font">Who are you people? Why are you doing this?</p>
+					<span class="answer">We are concerned citizens who miss the times when you didn't need an excuse to hang out with strangers and make new friends. So we imagined this big orange button that we could push whenever we wanted to meet a bunch of people who (a) also want to meet people, (b) are ideally around our age, and (c) free this weekend.</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="section orange-background footer">
+			<div class="container-footer">
+				<p class="getgoing">Free this weekend?</p>
+				<p class="large-font">Get Going</p>
+				<div class="">
+					<div class="badge">
+						<a>
+							<img src="images/download-badge-ios.png">
+						</a>
+					</div>
+					<div class="badge">
+						<a>
+							<img src="images/download-badge-android.png">
+						</a>
+					</div>
+				</div>
+				<p class="regular-font">Say hello</p>
+				<a>scott@getgoing.xyz</a>
+				<p class="copyright regular-font">spw 2015</p>
 			</div>
 		</div>
 
